@@ -6,7 +6,7 @@ import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import './styles.css';
 
 // import video
-import videoBg from '../src/assets/Untitled.mp4';
+import videoBg from '../src/assets/videoplayback.mp4';
 import image from '../src/assets/Group 13.png'
 
 const App = () => {

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Typewriter from "typewriter-effect";
-
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 
@@ -18,7 +17,7 @@ const App = () => {
 
   return (
     <section className='page'>
-      {/* overlay */}
+{/* overlay */}
       <div className='overlay'></div>
       <video src={videoBg} autoPlay loop muted />
       <div className='page__content'>
@@ -27,27 +26,31 @@ const App = () => {
         <h2>Launching Soon</h2>
         <h3>
           <div className="text">
-          <Typewriter
-  
-  onInit={(typewriter)=> {
+            <Typewriter
 
-  typewriter
-   
-  .typeString("Into the space")
-    
-  .pauseFor(1000)
-  .deleteAll()
-  .typeString("Realm of Physics")
-  .start()
+              onInit={(typewriter) => {
 
-  .pauseFor(1000)
-  .deleteAll()
-  .typeString("Astronomy")
-  .start();
-  
-  }}
-  />
-        </div>
+                typewriter
+
+                  .typeString("Into the space")
+
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Realm of Physics")
+                  .start()
+
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Astronomy")
+                  .start()
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Astro-NITR welcomes you all");
+                  
+
+              }}
+            />
+          </div>
         </h3>
 
         <FlipClockCountdown

@@ -55,7 +55,7 @@ const App = () => {
 
         <FlipClockCountdown
           className='flip-clock'
-          to={new Date().getTime() + 24 * 3600 * 1000 + 100}
+          to={new Date().getTime() + 12 * 3600 * 1000 + 100}
         />
         {/* <button className='btn'>Notify me</button> */}
       </div>
